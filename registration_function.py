@@ -23,8 +23,8 @@ def welcome():
 def name():
     ''''
     This is the method for taking Name as input from user after taking input.
-    I use strip function to remove left space and right space 
-    after that call remove function to remove all space from that string 
+    I use strip function to remove left space and right space .
+    after that call remove function to remove all space from that string. 
     and by using isalpha function to check any other character other than alphabet is present or not 
     '''
     while True:
