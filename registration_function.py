@@ -145,23 +145,14 @@ def aadhar():
     '''
     Aadhar Number exactly equal to 12 are valid and should not start with zero
     '''
-    # try:
-    #     f=int(input("Enter Your 12 Digit Aadhar Number Without putting space  : "))
-    #     # if(len(str(f))!=12) or (str(f).isalpha()) or (int(str(f)[0])!=0):
-    #     if(len(str(f))!=12)): #or (int(str(f)[0])==0):
-    #         print("Please Enter a valid 12 digit aadhar Number and should not start with 0")
-    #         f=aadhar()
-    # except:
-    #     print("Aadhar Number is not valid! ")
-    #     f=aadhar()
-    while True:
-        try:
-            f=int(input("Enter Your 12 Digit Aadhar Number Without putting space  : "))
-            if(len(str(f))!=12) or (f.isalpha()):
-                raise ValueError ("Please Enter a valid 12 digit aadhar Number")
-            break
-        except ValueError as m:
-            print(m)
+    try:
+        f=int(input("Enter Your 12 Digit Aadhar Number Without putting space  : "))
+        if(len(str(f))!=12) or (int(str(f)[0])==0):
+            print("Please Enter a valid 12 digit aadhar Number and should not start with 0")
+            f=aadhar()
+    except:
+        print("Aadhar Number is not valid! ")
+        f=aadhar()
     return f
 
 def registration_confirmation(name,password,balance,address,mobile,aadhar):

@@ -400,6 +400,7 @@ while True:
                                             try:
                                                 nm3=input("Enter Your 12 Digit Aadhar Number Without putting space  : ")
                                                 if(len(nm3)!=12) or (nm3.isalpha()):
+                                                # if len(str(nm3)):
                                                     raise ValueError ("Please Enter a valid 12 digit aadhar Number")
                                                 break
                                             except ValueError as m:

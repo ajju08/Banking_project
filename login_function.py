@@ -308,33 +308,6 @@ def update_account_info(u,p):
                 print("Key other than 1 to 6 are not valid ! \U0001F642 ")
                 print('\n')                       
             elif(up1==1):
-                # while True:
-                #     try: 
-                #         a='.'
-                #         a1='#'
-                #         a2='$'
-                #         a3='*'
-                #         a4='&'
-                #         a5='='
-                #         a6=','
-                #         a7='@'
-                #         a8='?'
-                #         a9='/'
-                #         a10=' '
-                #         nm1 = input("Enter Your Name Here : ")
-                #         nm = remove(nm1)
-                #         if nm.isalpha() :
-                #             if ((a in nm) or (a1 in nm) or (a3 in nm) or (a4 in nm) or (a5 in nm) or (a6 in nm) or (a7 in nm) or (a8 in nm) or (a9 in nm) or (a10 in nm) )  :
-                #                 if nm.isalpha() :
-                #                     pass
-                #                 else:
-                #                     print("Name contains number are not allowed ")
-                #                 raise TypeError 
-                #             break
-                #         else :
-                #             print("Name contains number are not allowed ")
-                #     except TypeError:
-                #         print("Numeric or Special Character are not allowed like . , @ # < > ? / ; ")
                 nm1=name()
                 np="select account_number from account_details where name='{}' and password ='{}' ".format(u,p)
                 mycursor.execute(np)
@@ -345,25 +318,6 @@ def update_account_info(u,p):
                 mydb.commit()
                 print("Your Name is sucessfully updated! ")
             elif(up1==2):
-                # while True:        
-                #     try:
-
-                #         nm2=input("Enter Your Password : ")
-                #         if (len(nm2)<6):
-                #             raise ValueError (" Password should contain at least 6 character ")
-                #         if not any(char.isdigit() for char in nm2):
-                #             raise ValueError ("Password should atleast a number")
-                #         if not any(char.isupper() for char in nm2):
-                #             raise KeyError ()
-                #         if not any(char.islower() for char in nm2):
-                #             raise KeyError
-                #         if not any(char in SpecialSym for char in nm2 ):
-                #             raise KeyError
-                #         break
-                #     except ValueError:
-                #         print("Password should contain atleast 1 upper case, 1 Lower Case ,1 Numeric , 1 Special Character  and Password Must Contain atleast 7 character")
-                #     except KeyError:
-                #         print("Password should contain atleast 1 upper case, 1 Lower Case ,1 Numeric , 1 Special Character  and Password Must Contain atleast 7 character")
                 nm2=password()
                 np="select account_number from account_details where name='{}' and password ='{}' ".format(u,p)
                 mycursor.execute(np)
@@ -374,14 +328,6 @@ def update_account_info(u,p):
                 mydb.commit()
                 print("Your Password is sucessfully updated! ")
             elif(up1==3):
-                # while True:
-                #     try:
-                #         nm3=input("Enter Your 12 Digit Aadhar Number Without putting space  : ")
-                #         if(len(nm3)!=12) or (nm3.isalpha()):
-                #             raise ValueError ("Please Enter a valid 12 digit aadhar Number")
-                #         break
-                #     except ValueError as m:
-                #         print(m)
                 nm3=aadhar()
                 np="select account_number from account_details where name='{}' and password ='{}' ".format(u,p)
                 mycursor.execute(np)
@@ -392,14 +338,6 @@ def update_account_info(u,p):
                 mydb.commit()
                 print("Your Aadhar Number is sucessfully updated! ")
             elif(up1==4):
-                # while True:
-                #     try:
-                #         nm4=input("Enter Your Phone Number : ")
-                #         if (len(nm4)!=10) or (nm4.isalpha()):
-                #             raise ValueError("Pls enter a valid 10 digit Number")
-                #         break
-                #     except ValueError as m:
-                #         print(m)
                 nm4=mobile()
                 np="select account_number from account_details where name='{}' and password ='{}' ".format(u,p)
                 mycursor.execute(np)
@@ -410,7 +348,6 @@ def update_account_info(u,p):
                 mydb.commit()
                 print("Your Mobile Number is sucessfully updated! ")
             elif(up1==5):
-                # nm5=input("Enter Your Address : ")
                 nm5=address()
                 np="select account_number from account_details where name='{}' and password ='{}' ".format(u,p)
                 mycursor.execute(np)
