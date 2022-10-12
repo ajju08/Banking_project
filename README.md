@@ -8,9 +8,12 @@ This project is designed for The Account Holder to see their record, Transfer fu
 ~Requirement
 
 1.Python Latest Version
+
 2.Visual Studio Code
+
 3.MySql
-4.Pyhton MySql Converter : Most Important
+
+4.Python MySql connector : Most Important
 
 ~Module Used In Python Code
 
