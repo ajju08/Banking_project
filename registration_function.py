@@ -3,7 +3,7 @@ from mysql_connector import mydb, mycursor
 
 def remove(str):
     ''' 
-    This Method is for removing all space from string 
+    This Method is for removing all space from string. 
     '''
     return str.replace(" ", "")
 
