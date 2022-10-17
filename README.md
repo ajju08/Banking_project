@@ -43,13 +43,13 @@ This project is designed for The Account Holder to see their record, Transfer fu
 - **home.py**
   - This is home menu to run this banking application project here we call all registration_function and login_function
 
-- **registration_function**
+- **registration_function.py**
   - This is registration file in which all registion function are defined seperatly and if wanna to change something in one function it will not affect to  other function.
 
-- **login_function**
+- **login_function.py**
   - This is the login file in which all login function are defined seperatly and if wanna to change something in one function it will not affect to other function.
 
-- **mysql_connector**
+- **mysql_connector.py**
   - In this file we put the mysql login credential like as host,user,password and database name create a cursor to execute the mysql related code
 
 
